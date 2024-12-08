@@ -35,12 +35,12 @@ public abstract class BaseSpecification<T> : ISpecifications<T>
     /// <summary>
     /// Gets or sets the expression for ordering the result in ascending order.
     /// </summary>
-    public Expression<Func<T, object>> OrderBy { get; private set; }
+    public Expression<Func<T, object>> OrderBy { get; private set; } = null!;
 
     /// <summary>
     /// Gets or sets the expression for ordering the result in descending order.
     /// </summary>
-    public Expression<Func<T, object>> OrderByDescending { get; private set; }
+    public Expression<Func<T, object>> OrderByDescending { get; private set; } = null!;
 
     /// <summary>
     /// Gets or sets the number of records to return.
