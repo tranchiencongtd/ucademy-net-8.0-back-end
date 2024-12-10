@@ -8,25 +8,29 @@ public class Course : BaseAuditableEntity<Guid>
 {
     [Required]
     [MaxLength(200)]
-    public string Title { get; set; }
+    public required string Title { get; set; }
 
     [Required]
-    [Column(TypeName = "text")]
-    public string Description { get; set; }
+    [Column(TypeName = "varchar(250)")]
+    public required string Slug { get; set; }
 
-    [Column(TypeName = "decimal(18,2)")]
+    [MaxLength(500)]
+    public string? Description { get; set; }
+
+    [Column(TypeName = "decimal(18,0)")]
     public decimal Price { get; set; }
 
     [MaxLength(50)]
-    public string Language { get; set; }
+    public string? Language { get; set; }
 
     public int Duration { get; set; } // Duration in minutes
 
-    public ICollection<BitVector32.Section> Sections { get; set; } = new List<BitVector32.Section>();
+    public ICollection<Section> Sections { get; set; } = new List<Section>();
 
     public ICollection<Review> Reviews { get; set; } = new List<Review>();
 
     public ICollection<Category> Categories { get; set; } = new List<Category>();
 
-    [Required] public Instructor Instructor { get; set; }
+    [Required]
+    public required User User { get; set; }
 }

@@ -15,10 +15,10 @@ public abstract class BaseAuditableEntity<T> : BaseEntity<T>
     /// <summary>
     /// Gets or sets the datetime when the entity was last create.
     /// </summary>
-    public DateTimeOffset Created { get; set; }
+    public DateTime Created { get; set; }
     
     /// <summary>
     /// Gets or sets the datetime when the entity was last modified.
     /// </summary>
-    public DateTimeOffset LastModified { get; set; }
+    public DateTime LastModified { get; set; }
 }

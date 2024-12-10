@@ -7,14 +7,15 @@ public class Review : BaseEntity<Guid>
     [Range(1, 5)]
     public int Rating { get; set; } // Rating out of 5
 
+    [Required]
     [MaxLength(1000)]
-    public string Comment { get; set; }
+    public required string Comment { get; set; }
 
     public DateTime ReviewDate { get; set; }
 
     [Required]
-    public User User { get; set; }
+    public required User User { get; set; }
 
     [Required]
-    public Course Course { get; set; }
+    public required Course Course { get; set; }
 }

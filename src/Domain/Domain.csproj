@@ -1,6 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <Folder Include="Interfaces\Services\" />
-    <Folder Include="Interfaces\Repositories\" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
   </ItemGroup>
 </Project>

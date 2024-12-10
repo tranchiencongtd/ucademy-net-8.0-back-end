@@ -6,10 +6,10 @@ public class Category : BaseEntity<Guid>
 {
     [Required]
     [MaxLength(100)]
-    public string Name { get; set; }
+    public required string Name { get; set; }
 
     [MaxLength(500)]
-    public string Description { get; set; }
+    public string? Description { get; set; }
 
     public ICollection<Course> Courses { get; set; } = new List<Course>();
 }

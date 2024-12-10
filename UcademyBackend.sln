@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Applicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{0B3DF38F-9445-4F0D-932B-35F4E773C02F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "src\Web\Web.csproj", "{E6D2DD98-E400-4833-B204-CD0FFA179A5A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6799AD0E-B9DB-42E4-9E5D-2438C6C7ACD5}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -22,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "src\WebApi\WebApi.csproj", "{17FA71EA-AB13-4FB7-AF42-7D07867426D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,7 +35,7 @@ Global
 		{61643BE0-2D01-473E-A52C-1DD675A64AB8} = {E2ABEE65-478C-47B0-842B-6B3E3AF1EB03}
 		{EF0641BE-9A63-40A5-9CE3-31F484E442EB} = {E2ABEE65-478C-47B0-842B-6B3E3AF1EB03}
 		{0B3DF38F-9445-4F0D-932B-35F4E773C02F} = {E2ABEE65-478C-47B0-842B-6B3E3AF1EB03}
-		{E6D2DD98-E400-4833-B204-CD0FFA179A5A} = {E2ABEE65-478C-47B0-842B-6B3E3AF1EB03}
+		{17FA71EA-AB13-4FB7-AF42-7D07867426D2} = {E2ABEE65-478C-47B0-842B-6B3E3AF1EB03}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{61643BE0-2D01-473E-A52C-1DD675A64AB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -50,9 +50,9 @@ Global
 		{0B3DF38F-9445-4F0D-932B-35F4E773C02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B3DF38F-9445-4F0D-932B-35F4E773C02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B3DF38F-9445-4F0D-932B-35F4E773C02F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E6D2DD98-E400-4833-B204-CD0FFA179A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E6D2DD98-E400-4833-B204-CD0FFA179A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E6D2DD98-E400-4833-B204-CD0FFA179A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E6D2DD98-E400-4833-B204-CD0FFA179A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17FA71EA-AB13-4FB7-AF42-7D07867426D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FA71EA-AB13-4FB7-AF42-7D07867426D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FA71EA-AB13-4FB7-AF42-7D07867426D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FA71EA-AB13-4FB7-AF42-7D07867426D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

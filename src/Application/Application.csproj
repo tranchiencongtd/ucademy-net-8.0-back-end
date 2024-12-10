@@ -3,5 +3,10 @@
     <ItemGroup>
       <ProjectReference Include="..\Domain\Domain.csproj" />
     </ItemGroup>
+  
+    <ItemGroup>
+      <PackageReference Include="Ardalis.GuardClauses" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" />
+    </ItemGroup>
 
 </Project>
